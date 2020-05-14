@@ -40,8 +40,8 @@ public class Customer {
         this.cashOnHand = cashOnHand;
     }
 
-    public double purchaseSnacks(double totalCost, double cashOnHand) {
-        this.cashOnHand = cashOnHand - totalCost;
+    public double purchaseSnacks(double totalCost) {
+        this.cashOnHand = this.cashOnHand - totalCost;
         return cashOnHand;
     }
 
