@@ -29,7 +29,7 @@ public class Customer {
     }
 
     public double cash(double cash) {
-        return cash = cashOnHand + cash;
+        return cashOnHand = cashOnHand + cash;
     }
 
     public double getCashOnHand() {
