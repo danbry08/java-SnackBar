@@ -7,13 +7,13 @@ public class Snacks {
     String name;
     private int quantity;
     private double cost;
-    private String vendingMachineId;
+    private int vendingMachineId;
 
     public static void main(String[] args) {
 
     }
 
-    public Snacks(String name, int quantity, double cost, String vendingMachineId) {
+    public Snacks(String name, int quantity, double cost, int vendingMachineId) {
         maxId++;
         id = maxId;
 
@@ -44,11 +44,11 @@ public class Snacks {
         this.cost = cost;
     }
 
-    public String getVendingMachineId() {
+    public int getVendingMachineId() {
         return vendingMachineId;
     }
 
-    public void setVendingMachineId(String vendingMachineId) {
+    public void setVendingMachineId(int vendingMachineId) {
         this.vendingMachineId = vendingMachineId;
     }
 
@@ -60,13 +60,13 @@ public class Snacks {
         this.quantity = quantity;
     }
 
-    public void totalQuantity(int newQuantity) {
-        quantity = quantity + newQuantity;
+    public int totalQuantity(int newQuantity) {
+        return quantity = quantity + newQuantity;
     }
 
-    public void buySnack(int snackQuantity) // double check
+    public int buySnack(int snackQuantity) // double check
     {
-        quantity = quantity - snackQuantity;
+        return quantity = quantity - snackQuantity;
     }
 
     public double totalCost(int quantity, double cost) {

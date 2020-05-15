@@ -28,8 +28,8 @@ public class Customer {
         this.name = name;
     }
 
-    public void cash(double cash) {
-        cash = cashOnHand + cash;
+    public double cash(double cash) {
+        return cash = cashOnHand + cash;
     }
 
     public double getCashOnHand() {
